@@ -8,7 +8,8 @@ import {
 	HiOutlineQuestionMarkCircle,
 	HiOutlineCog
 } from 'react-icons/hi'
-
+import { IoStatsChartOutline } from "react-icons/io5";
+import { GrIntegration } from "react-icons/gr";
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'dashboard',
@@ -23,10 +24,10 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineCube />
 	},
 	{
-		key: 'orders',
-		label: 'Orders',
-		path: '/orders',
-		icon: <HiOutlineShoppingCart />
+		key: 'campaign',
+		label: 'Campaign',
+		path: '/campaign',
+		icon: < IoStatsChartOutline />
 	},
 	{
 		key: 'customers',
@@ -35,10 +36,10 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineUsers />
 	},
 	{
-		key: 'transactions',
-		label: 'Transactions',
-		path: '/transactions',
-		icon: <HiOutlineDocumentText />
+		key: 'integration',
+		label: 'Integration',
+		path: '/integration',
+		icon: <GrIntegration />
 	},
 	{
 		key: 'messages',
