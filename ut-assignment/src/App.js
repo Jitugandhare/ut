@@ -1,12 +1,22 @@
-import Dashboard from "./components/Dashboard";
-import Sidebar from "./components/Sidebar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './components/shared/Layout'
+import Register from './pages/Register'
+import Dashboard from './pages/Dashboard'
+import Products from './pages/Products'
+// import Dashboard from './components/Dashboard'
 
 function App() {
-  return (
-    <div className="bg-gray-100 min-h-screen p-5">
-      <Sidebar/>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Dashboard />} />
+                    <Route path="products" element={<Products />} />
+                </Route>
+                <Route path="/register" element={<Register />} />
+            </Routes>
+        </Router>
+    )
 }
 
-export default App;
+export default App
