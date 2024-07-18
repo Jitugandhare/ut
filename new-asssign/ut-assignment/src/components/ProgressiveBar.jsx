@@ -7,9 +7,10 @@ const PerformanceScoreCard = () => {
   const maxScore = 100;
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg w-[25%]  h-[40%]">
-      <div className="mb-6 w-[80%] m-auto " >
+    <div className="bg-white p-6 rounded-lg shadow-lg w-full ">
+      <div className="mb-6 ">
         <CircularProgressbar
+         className='h-[40%]'
           value={score}
           maxValue={maxScore}
           text={`${score}`}
